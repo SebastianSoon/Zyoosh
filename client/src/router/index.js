@@ -149,6 +149,16 @@ const router = createRouter({
             component: () => import('@/views/pages/Landing.vue')
         },
         {
+            path: '/media',
+            name: 'media',
+            component: () => import('@/views/pages/Media.vue')
+        },
+        {
+            path: '/aboutus',
+            name: 'aboutus',
+            component: () => import('@/views/pages/AboutUs.vue')
+        },
+        {
             path: '/pages/notfound',
             name: 'notfound',
             component: () => import('@/views/pages/NotFound.vue')
