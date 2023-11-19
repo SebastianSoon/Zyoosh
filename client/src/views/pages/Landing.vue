@@ -15,16 +15,19 @@ const smoothScroll = (id) => {
     });
 };
 
-const logoUrl = computed(() => {
-    return `layout/images/${layoutConfig.darkTheme.value ? 'logo-white' : 'logo-dark'}.svg`;
-});
+// const logoUrl = computed(() => {
+//     return `layout/images/${layoutConfig.darkTheme.value ? 'logo-white' : 'logo-dark'}.svg`;
+// });
 </script>
 
 <template>
     <div class="surface-0 flex justify-content-center">
         <div id="home" class="landing-wrapper overflow-hidden">
             <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 flex align-items-center justify-content-between relative lg:static mb-3">
-                <a class="flex align-items-center" href="#"> <img :src="logoUrl" alt="Sakai Logo" height="50" class="mr-0 lg:mr-2" /><span class="text-900 font-medium text-2xl line-height-3 mr-8">Zyoosh</span> </a>
+                <a class="flex align-items-center" href="#">
+                    <img src="/images/logo/Zyoosh-Logo-Shark.png" alt="Zyoosh Logo" height="50" class="mr-0 lg:mr-2" />
+                    <img src="/images/logo/Zyoosh-Logo-Word.png" alt="Name" height="40" class="mr-0 lg:mr-2" />
+                </a>
                 <a class="cursor-pointer block lg:hidden text-700 p-ripple" v-ripple v-styleclass="{ selector: '@next', enterClass: 'hidden', leaveToClass: 'hidden', hideOnOutsideClick: true }">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
@@ -67,7 +70,7 @@ const logoUrl = computed(() => {
             <div
                 id="hero"
                 class="flex flex-column pt-4 px-4 lg:px-8 overflow-hidden"
-                style="background-image: url('/demo/images/landing/zyoosh-landing.jpg'); background-size: cover; background-repeat: no-repeat;clip-path: ellipse(150% 87% at 93% 13%); height: 500px"
+                style="background-image: url('/images/landing/zyoosh-landing.jpg'); background-size: cover; background-repeat: no-repeat;clip-path: ellipse(150% 87% at 93% 13%); height: 500px"
             >
                 <div class="mx-4 md:mx-8 mt-0 md:mt-4">
                     <h1 class="text-6xl font-bold text-gray-200 line-height-2"><span class="font-light block">Welcome</span>Zyoosh community</h1>
@@ -75,7 +78,7 @@ const logoUrl = computed(() => {
                     <Button label="Sign Up" class="p-button-rounded text-xl border-none mt-5 bg-blue-500 font-normal text-white line-height-3 px-4"></Button>
                 </div>
                 <!-- <div class="flex justify-content-center md:justify-content-end">
-                    <img src="/demo/images/landing/zyoosh-landing.png" alt="Hero Image" class="w-9 md:w-auto" />
+                    <img src="/images/landing/zyoosh-landing.png" alt="Hero Image" class="w-9 md:w-auto" />
                 </div> -->
             </div>
 
@@ -87,7 +90,7 @@ const logoUrl = computed(() => {
 
                 <div class="grid mt-8 pb-2 md:pb-8">
                     <div class="flex justify-content-center col-12 lg:col-6 bg-purple-100 p-0 flex-order-1 lg:flex-order-0" style="border-radius: 8px">
-                        <img src="/demo/images/landing/sample-david.jpg" class="w-11" alt="sample david" />
+                        <img src="/images/landing/sample-david.jpg" class="w-11" alt="sample david" />
                     </div>
 
                     <div class="col-12 lg:col-6 my-auto flex flex-column lg:align-items-end text-center lg:text-right">
@@ -113,7 +116,7 @@ const logoUrl = computed(() => {
                     </div>
 
                     <div class="flex justify-content-center flex-order-1 sm:flex-order-2 col-12 lg:col-6 bg-yellow-100 p-0" style="border-radius: 8px">
-                        <img src="/demo/images/landing/sample-relay.png" class="w-11" alt="mockup" />
+                        <img src="/images/landing/sample-relay.png" class="w-11" alt="mockup" />
                     </div>
                 </div>
             </div>
@@ -128,11 +131,11 @@ const logoUrl = computed(() => {
                     <div class="col-12 lg:col-4 p-0 md:p-3 mt-4 md:mt-0">
                         <div class="p-3 flex flex-column border-200 programs-card cursor-pointer border-2 hover:border-primary transition-duration-300 transition-all" style="border-radius: 10px">
                             <h3 class="text-900 text-center my-5">Learn to Swim</h3>
-                            <img src="/demo/images/landing/startup.svg" class="w-10 h-10 mx-auto" alt="startup" />
+                            <img src="/images/landing/startup.svg" class="w-10 h-10 mx-auto" alt="startup" />
                             <div class="my-5 text-center">
                                 <span class="text-5xl font-bold mr-2 text-900">RM 50</span>
                                 <span class="text-600">per class</span>
-                                <Button label="Try Free" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></Button>
+                                <Button label="Get a free trial" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></Button>
                             </div>
                             <Divider class="w-full bg-surface-200"></Divider>
                             <ul class="my-5 list-none p-0 flex text-900 flex-column">
@@ -151,11 +154,11 @@ const logoUrl = computed(() => {
                     <div class="col-12 lg:col-4 p-0 md:p-3 mt-4 md:mt-0">
                         <div class="p-3 flex flex-column border-200 programs-card cursor-pointer border-2 hover:border-primary transition-duration-300 transition-all" style="border-radius: 10px">
                             <h3 class="text-900 text-center my-5">Competitive</h3>
-                            <img src="/demo/images/landing/enterprise.svg" class="w-10 h-10 mx-auto" alt="enterprise" />
+                            <img src="/images/landing/enterprise.svg" class="w-10 h-10 mx-auto" alt="enterprise" />
                             <div class="my-5 text-center">
                                 <span class="text-5xl font-bold mr-2 text-900">RM 55</span>
                                 <span class="text-600">per class</span>
-                                <Button label="Get a Quote" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></Button>
+                                <Button label="Apply Now" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></Button>
                             </div>
                             <Divider class="w-full bg-surface-200"></Divider>
                             <ul class="my-5 list-none p-0 flex text-900 flex-column">
@@ -174,11 +177,11 @@ const logoUrl = computed(() => {
                     <div class="col-12 lg:col-4 p-0 md:p-3">
                         <div class="p-3 flex flex-column border-200 programs-card cursor-pointer border-2 hover:border-primary transition-duration-300 transition-all" style="border-radius: 10px">
                             <h3 class="text-900 text-center my-5">Stroke Clinic</h3>
-                            <img src="/demo/images/landing/free.svg" class="w-10 h-10 mx-auto" alt="free" />
+                            <img src="/images/landing/free.svg" class="w-10 h-10 mx-auto" alt="free" />
                             <div class="my-5 text-center">
-                                <span class="text-5xl font-bold mr-2 text-900">$0</span>
-                                <span class="text-600">per month</span>
-                                <Button label="Get Started" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></Button>
+                                <span class="text-5xl font-bold mr-2 text-900">RM 50</span>
+                                <span class="text-600">per class</span>
+                                <Button label="Get a free trial" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></Button>
                             </div>
                             <Divider class="w-full bg-surface-200"></Divider>
                             <ul class="my-5 list-none p-0 flex text-900 flex-column">
@@ -201,14 +204,17 @@ const logoUrl = computed(() => {
                     </div>
                 </div>
             </div>
-
+            <Divider></Divider>
             <div class="py-4 px-4 mx-0 mt-8 lg:mx-8">
                 <div class="grid justify-content-between">
                     <div class="col-12 md:col-2" style="margin-top: -1.5rem">
                         <a @click="smoothScroll('#home')" class="flex flex-wrap align-items-center justify-content-center md:justify-content-start md:mb-0 mb-3 cursor-pointer">
-                            <img :src="logoUrl" alt="footer sections" width="50" height="50" class="mr-2" />
-                            <h4 class="font-medium text-3xl text-900">Zyoosh</h4>
+                            <img src="/images/logo/Zyoosh-Logo.png" alt="footer sections" width="100" height="100" class="mr-2" />
                         </a>
+                        <!-- <a class="flex align-items-center" href="#">
+                            <img src="/images/logo/Zyoosh-Logo-Shark.png" alt="Zyoosh Logo" height="50" class="mr-0 lg:mr-2" />
+                            <img src="/images/logo/Zyoosh-Logo-Word.png" alt="Name" height="40" class="mr-0 lg:mr-2" />
+                        </a> -->
                     </div>
 
                     <div class="col-12 md:col-10 lg:col-7">
@@ -234,7 +240,7 @@ const logoUrl = computed(() => {
                                 <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700" href="https://www.instagram.com/zyoosh_swimming/" target="_blank">Facebook</a>
                                 <a href="tel:+601111664621" class="line-height-3 text-xl block cursor-pointer mb-2 text-700" v-tooltip.left="'+60 11-11664621'">WhatsApp</a>
                                 <a href="mailto:zyooshmys@gmail.com" class="line-height-3 text-xl block cursor-pointer mb-2 text-700" v-tooltip.left="'zyooshmys@gmail.com'">Email</a>
-                                <!-- <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Events<img src="/demo/images/landing/new-badge.svg" class="ml-2" /></a> -->
+                                <!-- <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Events<img src="/images/landing/new-badge.svg" class="ml-2" /></a> -->
                             </div>
                         </div>
                     </div>

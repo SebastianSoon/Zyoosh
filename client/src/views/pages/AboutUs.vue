@@ -68,7 +68,7 @@ const logoUrl = computed(() => {
 
                 <div class="grid mt-8 pb-2 md:pb-8">
                     <div class="flex justify-content-center col-12 lg:col-6 bg-purple-100 p-0 flex-order-1 lg:flex-order-0" style="border-radius: 8px">
-                        <img src="/demo/images/landing/sample-david.jpg" class="w-11" alt="sample david" />
+                        <img src="/images/landing/sample-david.jpg" class="w-11" alt="sample david" />
                     </div>
 
                     <div class="col-12 lg:col-6 my-auto flex flex-column">
@@ -99,13 +99,13 @@ const logoUrl = computed(() => {
                     </div>
 
                     <div class="flex justify-content-center flex-order-1 sm:flex-order-2 col-12 lg:col-6 bg-yellow-100 p-0" style="border-radius: 8px">
-                        <img src="/demo/images/landing/sample-relay.png" class="w-11" alt="mockup" />
+                        <img src="/images/landing/sample-relay.png" class="w-11" alt="mockup" />
                     </div>
                 </div>
 
                 <div class="grid mt-8 pb-2 md:pb-8">
                     <div class="flex justify-content-center col-12 lg:col-6 bg-purple-100 p-0 flex-order-1 lg:flex-order-0" style="border-radius: 8px">
-                        <img src="/demo/images/landing/sample-david.jpg" class="w-11" alt="sample david" />
+                        <img src="/images/landing/sample-david.jpg" class="w-11" alt="sample david" />
                     </div>
 
                     <div class="col-12 lg:col-6 my-auto flex flex-column">
@@ -131,7 +131,7 @@ const logoUrl = computed(() => {
                     </div>
 
                     <div class="flex justify-content-center flex-order-1 sm:flex-order-2 col-12 lg:col-6 bg-yellow-100 p-0" style="border-radius: 8px">
-                        <img src="/demo/images/landing/sample-relay.png" class="w-11" alt="mockup" />
+                        <img src="/images/landing/sample-relay.png" class="w-11" alt="mockup" />
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@ const logoUrl = computed(() => {
                                 <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700" href="https://www.instagram.com/zyoosh_swimming/" target="_blank">Facebook</a>
                                 <a href="tel:+601111664621" class="line-height-3 text-xl block cursor-pointer mb-2 text-700" v-tooltip.left="'+60 11-11664621'">WhatsApp</a>
                                 <a href="mailto:zyooshmys@gmail.com" class="line-height-3 text-xl block cursor-pointer mb-2 text-700" v-tooltip.left="'zyooshmys@gmail.com'">Email</a>
-                                <!-- <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Events<img src="/demo/images/landing/new-badge.svg" class="ml-2" /></a> -->
+                                <!-- <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Events<img src="/images/landing/new-badge.svg" class="ml-2" /></a> -->
                             </div>
                         </div>
                     </div>

@@ -99,7 +99,7 @@ const logoUrl = computed(() => {
                                 <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700" href="https://www.instagram.com/zyoosh_swimming/" target="_blank">Facebook</a>
                                 <a href="tel:+601111664621" class="line-height-3 text-xl block cursor-pointer mb-2 text-700" v-tooltip.left="'+60 11-11664621'">WhatsApp</a>
                                 <a href="mailto:zyooshmys@gmail.com" class="line-height-3 text-xl block cursor-pointer mb-2 text-700" v-tooltip.left="'zyooshmys@gmail.com'">Email</a>
-                                <!-- <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Events<img src="/demo/images/landing/new-badge.svg" class="ml-2" /></a> -->
+                                <!-- <a class="line-height-3 text-xl block cursor-pointer mb-2 text-700">Events<img src="/images/landing/new-badge.svg" class="ml-2" /></a> -->
                             </div>
                         </div>
                     </div>

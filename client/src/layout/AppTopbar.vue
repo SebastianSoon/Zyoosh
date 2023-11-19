@@ -17,9 +17,9 @@ onBeforeUnmount(() => {
     unbindOutsideClickListener();
 });
 
-const logoUrl = computed(() => {
-    return `layout/images/${layoutConfig.darkTheme.value ? 'logo-white' : 'logo-dark'}.svg`;
-});
+// const logoUrl = computed(() => {
+//     return `layout/images/${layoutConfig.darkTheme.value ? 'logo-white' : 'logo-dark'}.svg`;
+// });
 
 const onTopBarMenuButton = () => {
     topbarMenuActive.value = !topbarMenuActive.value;
@@ -63,8 +63,10 @@ const isOutsideClicked = (event) => {
 <template>
     <div class="layout-topbar">
         <router-link to="/" class="layout-topbar-logo">
-            <img :src="logoUrl" alt="logo" />
-            <span>SAKAI</span>
+            <a class="flex align-items-center" href="#">
+                <img src="/images/logo/Zyoosh-Logo-Shark.png" alt="Zyoosh Logo" class="mr-0 lg:mr-2" />
+                <img src="/images/logo/Zyoosh-Logo-Word.png" alt="Name" height="40" class="mr-0 lg:mr-2" />
+            </a>
         </router-link>
 
         <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
